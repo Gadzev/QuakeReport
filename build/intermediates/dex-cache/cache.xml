@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/lignux/AndroidStudioProjects/ud843-QuakeReport/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/lignux/AndroidStudioProjects/ud843-QuakeReport/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f3024711aea3922d793edebe6d29e944e2a4eaa4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lignux/AndroidStudioProjects/ud843-QuakeReport/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="933d3438173e8d714bb89505c92a2272e04943a7">
+        <dex dex="/home/lignux/AndroidStudioProjects/ud843-QuakeReport/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_342184d4da0f323688a91a4d9869d6aac1aac8ec/classes.dex" />
+    </item>
+
+</items>
