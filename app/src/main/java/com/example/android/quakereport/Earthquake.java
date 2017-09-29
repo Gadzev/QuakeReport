@@ -5,17 +5,17 @@ import java.util.Date;
 
 public class Earthquake {
 
-    private float mMagnitude;
+    private double mMagnitude;
     private String mLocation;
-    private Date mDate;
+    private int mDate;
 
-    public Earthquake(float magnitude, String location, Date date) {
+    public Earthquake(double magnitude, String location, int date) {
         mMagnitude = magnitude;
         mLocation = location;
         mDate = date;
     }
 
-    public float getmMagnitude() {
+    public double getmMagnitude() {
         return mMagnitude;
     }
 
@@ -23,7 +23,7 @@ public class Earthquake {
         return mLocation;
     }
 
-    public Date getmDate() {
+    public int getmDate() {
         return mDate;
     }
 }
