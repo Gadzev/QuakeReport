@@ -11,23 +11,27 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         tools:text="6.2"
-        android:layout_weight="1"
-        android:layout_gravity="start"/>
+        android:layout_weight="1" />
 
     <TextView
         android:id="@+id/location_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         tools:text="San Francisco"
-        android:layout_weight="1"
-        android:layout_gravity="top|center"/>
+        android:layout_weight="1" />
 
     <TextView
         android:id="@+id/date_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         tools:text="27-01-2018"
-        android:layout_gravity="end"
         android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/time_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="3:00 PM"/>
 
 </LinearLayout>
