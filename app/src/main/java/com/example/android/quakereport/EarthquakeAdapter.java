@@ -19,13 +19,14 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 
 public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
 
     private static final String LOCATION_SEPARATOR = "of";
 
-    public EarthquakeAdapter(@NonNull Context context, ArrayList<Earthquake> earthquakes) {
+    public EarthquakeAdapter(@NonNull Context context, List<Earthquake> earthquakes) {
         super(context, 0, earthquakes);
     }
 
