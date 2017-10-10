@@ -15,7 +15,11 @@
  */
 package com.example.android.quakereport;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -57,8 +61,14 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
         emptyTextView = (TextView) findViewById(R.id.empty_view);
         mProgressBar = (ProgressBar) findViewById(R.id.progress_bar);
 
-        LoaderManager loaderManager = getLoaderManager();
-        loaderManager.initLoader(LOADER_ID, null, this);
+
+        if (isConnected()) {
+            LoaderManager loaderManager = getLoaderManager();
+            loaderManager.initLoader(LOADER_ID, null, this);
+        } else {
+            mProgressBar.setVisibility(View.GONE);
+            emptyTextView.setText(R.string.no_internet);
+        }
     }
 
     private void updateUI(List<Earthquake> earthquakes) {
@@ -81,8 +91,14 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
                 startActivity(websiteIntent);
             }
         });
+    }
 
+    private boolean isConnected() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = connectivityManager.getActiveNetworkInfo();
+        boolean isConnected = netInfo != null && netInfo.isConnectedOrConnecting();
 
+        return isConnected;
     }
 
 
