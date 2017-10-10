@@ -11,9 +11,15 @@
         android:divider="@null"
         android:dividerHeight="0dp"/>
 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
     <TextView
         android:id="@+id/empty_view"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="@string/empty_view"
         android:layout_centerInParent="true"/>

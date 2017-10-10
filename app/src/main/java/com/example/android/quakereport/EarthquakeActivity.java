@@ -27,6 +27,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.lang.reflect.Array;
@@ -41,6 +42,7 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
     private EarthquakeAdapter mAdapter;
 
     private TextView emptyTextView;
+    private ProgressBar mProgressBar;
 
     public static final String LOG_TAG = EarthquakeActivity.class.getName();
     public static final String USGS_REQUEST_URL =
@@ -53,6 +55,7 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
         setContentView(R.layout.earthquake_activity);
 
         emptyTextView = (TextView) findViewById(R.id.empty_view);
+        mProgressBar = (ProgressBar) findViewById(R.id.progress_bar);
 
         LoaderManager loaderManager = getLoaderManager();
         loaderManager.initLoader(LOADER_ID, null, this);
@@ -90,6 +93,7 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
 
     @Override
     public void onLoadFinished(android.content.Loader<List<Earthquake>> loader, List<Earthquake> earthquakes) {
+        mProgressBar.setVisibility(View.GONE);
         emptyTextView.setText(R.string.empty_view);
 
         if (mAdapter != null) {
