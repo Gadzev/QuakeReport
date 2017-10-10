@@ -12,12 +12,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/lignux/.android/build-cache/2d39cc20c62844929cc86fc50e0a2621b16a7461/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/home/lignux/AndroidStudioProjects/ud843-QuakeReport/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9b63c7d03f908a922b8d5bce9ffbfcd67bd060c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/lignux/AndroidStudioProjects/ud843-QuakeReport/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="2fa4c6d32cc3ffc625adf6af695772b86a11abf5">
+        sha1="147925112bcf2bc360ddcdef38288c5c4cc6eb53">
         <dex dex="/home/lignux/AndroidStudioProjects/ud843-QuakeReport/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_342184d4da0f323688a91a4d9869d6aac1aac8ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lignux/.android/build-cache/c8f99703f537ee86a98ff624a54acfd19a7277f5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/home/lignux/AndroidStudioProjects/ud843-QuakeReport/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_28e460ae59ec3dac3029a83975070fa6dbd9b4bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lignux/.android/build-cache/e7983ed98dc8de82898a7da8a3aa7cf581cc6f76/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/lignux/AndroidStudioProjects/ud843-QuakeReport/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_82cacc283eb34125b3ca946297ead544d70e3845/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lignux/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/lignux/AndroidStudioProjects/ud843-QuakeReport/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_3358ca9427a52b367d5c1b5775db417f87484c5a/classes.dex" />
     </item>
 
 </items>
